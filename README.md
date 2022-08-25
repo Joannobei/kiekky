@@ -1,2 +1,2 @@
 # kiekky
-a social app where people can interact and meet people
+a social app where you get to interact and meet people
