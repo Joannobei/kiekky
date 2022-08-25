@@ -15,7 +15,7 @@ function HotPicks() {
 
   return (
     <div className=' lg:w-[968px] w-[378px] mb-[20px] lg:mb-[50px] '>
-      <div className="top-text flex justify-between  lg:w-[995px] ">
+      <div className="top-text flex justify-between  lg:w-[968px] ">
         <div className="sub space-x-2 flex items-center">
           <p>Hot Picks</p>
           <div className="flex space-x-[1px] bg-[#F6F4FF] " >
@@ -49,7 +49,7 @@ function HotPicks() {
                       <img src={ribbon} alt="" />
                     </div>
                     <img
-                      className="stats mb-2 w-[100px] lg:w-[154px] lg:h-[130px] h-[112px] rounded-lg  "
+                      className=" mb-2 w-[100px] lg:w-[154px] lg:h-[130px] h-[112px] rounded-lg  "
                       src={story.image}
                       alt="icon"
                     />

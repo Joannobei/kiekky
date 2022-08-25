@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <div className=''>
-      <LoginNav/>
+      <LoginNav />
 
       <div className="flex relative m-auto">
         <div className="w-2/5 hidden lg:block">
@@ -36,19 +36,19 @@ const Login = () => {
         </div>
 
         <div className=" w-[352px] m-auto object-contain lg:w-1/3 mt-[8rem] lg:mt-[10rem] ">
-         
-        <div className="  ">
+
+          <div className="  ">
             <Link to="/">
               <BiArrowBack size='2rem' />
             </Link>
           </div>
-         
+
           <h1 className="mb-5 text-xl text-center ">Welcome Back</h1>
           <div>
             <div className="mx-auto mb-6 ">
               <div
                 className={`${toggleState === 1
-                    ? activeTabs : tabs
+                  ? activeTabs : tabs
                   } flex h-[60px]  rounded-lg border-[1px] bg-[#F4F4F4] `}
               >
                 <div
@@ -56,18 +56,18 @@ const Login = () => {
                   className={`${toggleState === 1 ? activeTabs : tabs
                     }  w-[176px] lg:w-[260px] flex justify-center items-center `}
                 >
-                    
-                    <div>
-                      <BiEnvelope size={"20px"} />
-                    </div>
+
+                  <div>
+                    <BiEnvelope size={"20px"} />
+                  </div>
                 </div>
                 <div
                   onClick={() => toggleTab(2)}
                   className={`${toggleState === 2 ? activeTabs : tabs
                     } w-[176px] lg:w-[260px] flex justify-center items-center `}
                 >     <div>
-                      <BsPhone size={"20px"} />
-                    </div>
+                    <BsPhone size={"20px"} />
+                  </div>
                 </div>
               </div>
             </div>
@@ -76,12 +76,12 @@ const Login = () => {
           {/* {toggleState === 1 ? <LoginEmail /> : <LoginPhone />} */}
 
           <div className={toggleState === 1 ? (content, activeContent) : content}>
-        <LoginEmail />
-      </div>
+            <LoginEmail />
+          </div>
 
-      <div className={toggleState === 2 ? (content, activeContent) : content}>
-        <LoginPhone />
-      </div>
+          <div className={toggleState === 2 ? (content, activeContent) : content}>
+            <LoginPhone />
+          </div>
 
           <p className="text-center my-5 text-sm ">
             Don't have an account?

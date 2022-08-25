@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { BiCamera, BiVideoPlus } from "react-icons/bi";
 import { useForm } from "react-hook-form";
-// import { Avatar } from "@mui/material";
 import { createPost } from '../../Redux/features/createPost/createPostSlice'
 
 import axios from "axios";
@@ -70,7 +69,6 @@ function Post() {
                         src={display.image}
                         alt="icon"
                       />
-                      {/* <Avatar alt={data.image} src="/static/images/avatar/1.jpg" /> */}
                     </div>
                   </div>
                 ))
@@ -81,7 +79,7 @@ function Post() {
               <textarea
                 className="outline-none w-full  text-[#212121] lg:mt-7"
                 type="text"
-                placeholder="Whats new.."
+                placeholder="What's new.."
                 name=""
                 id=""
                 {...register("body")}

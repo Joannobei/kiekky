@@ -8,7 +8,7 @@ function UserInfo() {
 
   const toggleTab = (tab) => {
     setToggleState(tab);
-    // console.log(tab);
+   
   };
 
   const activeTabs = "bg-[#6a52fd] text-[#ffffff] rounded-lg"

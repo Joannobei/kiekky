@@ -32,7 +32,7 @@ const Tokens = () => {
     if (userbalance) {
       dispatch(reset());
     };
-  }, [ userbalance.data, isError, message, dispatch ]);
+  }, [ userbalance, isError, message, dispatch ]);
 
   return (
     <div>

@@ -99,8 +99,7 @@
   border-image: linear-gradient(180deg, #6a52fd, #fd52ab);
   border-image-slice: 1;
   border-width: 3px;
-  border-style: solid;
-}
+  border-style: solid;}
 
 .money input{
   border: 1px solid #F6F4FF;

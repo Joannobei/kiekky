@@ -39,13 +39,15 @@ function Feeds() {
         {
           data.map(function (feed, id) {
             let res = feed?.images;
+            let resV = feed?.video
             const result = res[0] ? res[0].url : null;
+            const resultV = resV ? resV.url : null;
             // : "https://www.thermaxglobal.com/wp-content/uploads/2020/05/image-not-found-300x169.jpg";
 
             return (
               <div
                 key={feed.id}
-                className="bg-white pt-[17px] lg:pt-[30px] m-auto rounded-lg my-20  lg:w-[672px] h-full  "
+                className="bg-white pt-[17px] lg:pt-[30px] m-auto rounded-lg my-5  lg:w-[672px] h-full  "
               >
                 <div>
                   <div className="mb-7 lg:w-[672px]  m-auto">
@@ -104,12 +106,16 @@ function Feeds() {
                             <VscLock color="white" />
                             <p className="text-white mt-3 text-sm lg:text-base">Unlock for {feed.amount} tokens</p>
                            </div>
-                           </div> : null }  
-                        <img
+                           </div> : resultV }  
+
+                           {result ? <img
                           className="object-contain w-full h-full"
                           src={result}
                           alt=""
-                        />
+                        /> : <video src={resultV} /> }
+                        
+                            
+
                       </div> : null  }
                      
                     </div>
