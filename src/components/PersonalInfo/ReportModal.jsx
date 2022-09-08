@@ -1,6 +1,4 @@
 import React from 'react';
-
-
 function ReportModal({ visibleReport, onCloseReport }) {
     if (!visibleReport) return null;
     return (

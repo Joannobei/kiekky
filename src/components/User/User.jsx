@@ -79,8 +79,8 @@ function User() {
                     {profile.city.name}
                     {/* Lagos, Nigeria */}
                   </p>
-
                 </div>
+                
                 <div className="icons flex  space-x-3 mt-4">
                   <p className='text-sm text-[#828282] '><BiCamera color="" /> </p> <span className='text-xs text-[#828282] '>4</span>
                   <p className='text-sm text-[#828282] '> <FiVideo color="" /></p> <span className='text-xs text-[#828282]'>2</span>
